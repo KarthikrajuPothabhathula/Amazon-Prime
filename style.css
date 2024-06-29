@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(60px);
+    background-color: transparent;
+}
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    letter-spacing: 1px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    display: block;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+li:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffff;
+}
+#home{
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("./salaar_1693043688109_1693043688289.avif");
+    background-size: fill;
+    background-repeat: no-repeat;
+    z-index: -9999;
+}
+#movies{
+    min-height: 120vh;
+    background-color: rgb(22, 19, 19);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.about-section-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+span{
+    color: blue;
+}
+.about-page-para{
+    margin: 0px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.about-page-para:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffff;
+}
+.about-page-movie-list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+.image-list{
+    border: 2px solid green;
+    width: 100%;
+    border-radius: 10px;
+}
+.movie-image{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.movie-card-image{
+    display: block;
+}
+#projects{
+    height: 100vh;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+footer{
+    height: 100px;
+    background-color: gray;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid white;
+    margin: 10px;
+    padding: 10px;
+}
+.fa {
+    color: #ffff;
+}
+.home-title{
+    padding: 80px;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.home-section-heading{
+    letter-spacing: 5px;
+    color: #ffff;
+}
+.home-section-details{
+   margin-left: 80px;
+}
+.home-section-details-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-image: url("https://media.istockphoto.com/id/611067250/vector/brushed-metal-background.jpg?s=612x612&w=0&k=20&c=5NX_PSOXW680LOQfGNf6_xF8cinwNkSUMhuw9VVteBA");
+    background-size: fill;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+.home-section-button{
+    padding: 20px 30px;
+    background-color: lemonchiffon;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+/* card over list */
+ .card {
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+    margin: 0px 10px;
+    color: black;
+    background-color: white;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    backdrop-filter: blur(70px);
+    transform: scale(1.1);
+    z-index: 1;
+    color: #ffff;
+    min-height: 300px;
+}
+
+.card-content, .card-hover-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card img, .card-hover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  black;
+    /* box-shadow: 0 8px 16px whitesmoke; */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: opacity 0.3s;
+   
+}
+
+.card:hover .card-hover {
+    display: block;
+    opacity: 1;
+}
+
+.card-hover-content p {
+    margin: 10px 0px;
+    /* border: 1px solid green; */
+}
+.para-title{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.fa-check-circle{
+    color: blue;
+}
+.fa-plus-circle{
+    color: #ffff;
+    font-size: 13px;
+}
+.prime-para{
+    font-weight: bold;
+    margin: 30px 0px;
+}
